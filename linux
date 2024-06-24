@@ -1,0 +1,4 @@
+git hub commands to save the other's repo into your repo
+git rm --cached yourfolder
+Then, you could successfully run
+
