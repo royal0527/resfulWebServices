@@ -25,9 +25,9 @@ public class UserDapService {
         return users;
     }
 
-    public List<User> findById(Long id) {
-        Predicate<? super User> Predicate = user -> user.getId().equals(id);
-        return users.stream().filter(Predicate).toList();
+    public User findById(Long id) {
+        Predicate<? super User> predicate = user -> user.getId().equals(id);
+        return users.stream().filter(predicate).findFirst().orElse(null);
     }
 
     public User saveUser(User user) {
