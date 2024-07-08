@@ -36,7 +36,7 @@ public class UserController {
         entityModel.add(link.withRel("all-users"));
         return entityModel;
     }
-    @DeleteMapping("/user/{id}")
+    @DeleteMapping("/users/{id}")
     public void deleteUser(@PathVariable Long id)  {
         userDapService.deleteById(id);
     }
