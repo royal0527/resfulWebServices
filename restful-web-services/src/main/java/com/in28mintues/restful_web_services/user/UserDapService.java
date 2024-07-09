@@ -15,11 +15,11 @@ public class UserDapService {
     private static List<User> users = new ArrayList<>();
     private static Long count=0L;
 
-    static {
+    /*static {
         users.add(new User(++count, "rajusk", LocalDate.now().minusYears(30)));
         users.add(new User(++count, "rahul", LocalDate.now().minusYears(30)));
         users.add(new User(++count, "rose", LocalDate.now().minusYears(30)));
-    }
+    }*/
 
     public List<User> AllUsers() {
         return users;
